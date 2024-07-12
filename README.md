@@ -120,3 +120,6 @@ change_plot_color(tobacco_graphs[
 All of these functions and further explaination can be found in the cdindicatorFn.py file
 
 ## Results / Conclusions:
+### Asthma and Pulmonary diseases findings:
+Looking at the Asthma prevalance among young women Aged 18-44 yrs fig 
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Asthma%20Mortality%20Rate.png)
