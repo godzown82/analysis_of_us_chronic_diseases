@@ -1,3 +1,4 @@
+
 def check_year_columns(df):
     """
     This function will compare the YearEnd and YearStart columns in the designated dataframe to check if they are the same value
@@ -19,6 +20,7 @@ def check_year_columns(df):
     else:
         print("The 'YearStart' and 'YearEnd' columns do not have the same values in all rows.")
         df['YearDifference'] = df['YearEnd'] - df['YearStart']
+    #returns unaltered df if true and altered df with new column if false
     return df
 
 def group_sort(df):
@@ -44,18 +46,21 @@ def question_us_overall(df):
     parameters: enter desired df to be filtered
     returns dfs (a dictionary of filtered data frames, seperated by question)
     """
+    #creates a list with all the unique questions
     questions = df['Question'].unique().tolist()
 
-
+    #creates emtpty dictionary to store filtered dataframes
     dfs = {}
 
+    #creates question to itterate through questions list to create multiple filtered data frames using the loc funtction
     for question in questions:
         filter_df = df.loc[df['Question'] == question]\
             .loc[df['LocationAbbr'] == 'US']\
             .loc[df['StratificationCategory1'] == 'Overall']
+        # if not statement creating the condition that the dataframe must have values to be stored in the dictionary
         if not filter_df.empty:
-            dfs[question] = filter_df
-    return dfs
+            dfs[question] = filter_df #if dataframe has values it is stored in the dictionary with question as the key
+    return dfs #returns dictionary of dataframes with values
 
 
 def datavalue_type_filter(dfs):
@@ -67,20 +72,24 @@ def datavalue_type_filter(dfs):
     parametes: enter in dictionary of dataframes
     returns datavalue_filter_dfs (a dictionary of filtered dataframes)
     """
+    #creates list of manually entered in data type values discovered from there respective ipynb files when necessary
     target_data_type = ['Average Annual Number','Age-adjusted Prevalence', 'Age-adjusted Mean', 'Age-adjusted Rate']
 
+    #creates empty dictionary to store filtered dataframes
     datavalue_filter_dfs = {}
 
+    #starts a loop to iterate over items in dictionary with df_name as key and df as corresponding dataframe
     for df_name, df in dfs.items():
-        if any(df['DataValueType'].isin(target_data_type)):
-            datavalue_filter_df = df[df['DataValueType'].isin(target_data_type)]
-        else:
+        if any(df['DataValueType'].isin(target_data_type)): #checking to see if DataValueType column has values from list
+            datavalue_filter_df = df[df['DataValueType'].isin(target_data_type)] #if true sets DataTypeValue column to list value
+        
+        else: # if not true stores unaltered dataframe
             datavalue_filter_df = df
-        datavalue_filter_dfs[df_name] = datavalue_filter_df
+        datavalue_filter_dfs[df_name] = datavalue_filter_df #completes full dictionary of altered and unaltered dataframes and df_name keeps original keys
     return datavalue_filter_dfs
 
 
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt    #Must have import on py file for function to work on ipynb file
 def plot_graph_dict_red(dfs, figsize = (10, 6)):
 
     """
@@ -96,34 +105,49 @@ def plot_graph_dict_red(dfs, figsize = (10, 6)):
     Returns: graphs (a dictionary of graphs for each individual question)
 
     """
+    #creates empty dictionary to store the graphs
     graphs = {}
 
+    #starts a loop with a key and corresponding dataframe to iterate over items in dfs
     for df_name, df in dfs.items():
-        fig, ax = plt.subplots(figsize = figsize)
+        #creats a new figure and set of subplots 
+        # variable graph is a figure object where the plot will be drawn
+        # variable axis is an axes object that represents the actual data that will be plotted
+        graph, axis = plt.subplots(figsize = figsize)
 
+        #nested loop that groups by data value type an iterates over the groups
         for datavalue_type, group_df in df.groupby('DataValueType'):
+            #creates labels for each group with how many Datavalues used in graph and displays datavalue type
             label = f'Data Points: {group_df["DataValue"].count()}\nData Value Type: {datavalue_type}'
+            # if has Yeardifference column adds label for how many years included in plotted point
             if 'YearDifference' in df.columns and df['YearDifference'].max() > 0:
                 year_diff = group_df['YearDifference'].unique()
                 label += f'\nNumber of Years in 1 Data Point: {year_diff}'
+            #plots each group_df by Yearend y axis and datavalue on x axis
+            axis.plot(group_df['YearEnd'], group_df['DataValue'], label=label, color = 'red')
 
-            ax.plot(group_df['YearEnd'], group_df['DataValue'], label=label, color = 'red')
-
-
+            #zip is a built in python function that combines multiple iterables in a single iterable of tuples
+            #zip takes the df["YearEnd"] series and pairs with the corresponding df['DataValue'] series
             for year, value in zip(df['YearEnd'], df['DataValue']):
-                ax.axvline(x=year, ymin=0, ymax=value / df['DataValue'].max(), linestyle='--', color='gray', alpha=0.5)
+                #draws vertical lines for each data point extending from the x axis to the data points y value
+                axis.axvline(x=year, ymin=0, ymax=value / df['DataValue'].max(), linestyle='--', color='gray', alpha=0.5)
 
-        ax.set_xlabel('YearEnd')
-        ax.set_ylabel('DataValue')
-        ax.set_title(df_name.replace('_', ' ').title())
-        ax.legend()
-        graphs[df_name] = fig
+        axis.set_xlabel('YearEnd')
+        axis.set_ylabel('DataValue')
+        title = df_name.replace('_', ' ').title()
+        axis.set_title(title)
+        axis.legend()
+        #uncomment next line to create image files of graphs
+        #graph.savefig(f'{title}.png')
+        graphs[df_name] = graph
     return graphs
 
 
+# plt.savefig(f'{title}.png')
+# plt.show()
 
-
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
+import re  # Import regular expressions module only used if you are uncommented code below to create image files
 def plot_graph_dict_green(dfs, figsize = (10, 6)):
 
     """
@@ -138,6 +162,7 @@ def plot_graph_dict_green(dfs, figsize = (10, 6)):
     Returns: graphs (a dictionary of graphs for each individual question)
 
     """
+    #see comments for function plot_graph_dict_red for line by line explanations
     graphs = {}
 
     for df_name, df in dfs.items():
@@ -157,12 +182,17 @@ def plot_graph_dict_green(dfs, figsize = (10, 6)):
 
         ax.set_xlabel('YearEnd')
         ax.set_ylabel('DataValue')
-        ax.set_title(df_name.replace('_', ' ').title())
+        title = df_name.replace('_', ' ').title()
+        ax.set_title(title)
         ax.legend()
+        #uncomment next line to create image files
+
+        # safe_title = re.sub(r'[<>:"/\\|?*]', '_', title)
+        # fig.savefig(f'{safe_title}.png')
         graphs[df_name] = fig
     return graphs
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 def plot_graph_dict_neutral(dfs, figsize = (10, 6)):
 
     """
@@ -178,6 +208,7 @@ def plot_graph_dict_neutral(dfs, figsize = (10, 6)):
     Returns: graphs (a dictionary of graphs for each individual question)
 
     """
+    #see comments for function plot_graph_dict_red for line by line explanations
     graphs = {}
 
     for df_name, df in dfs.items():
