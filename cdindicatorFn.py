@@ -1,4 +1,5 @@
 
+
 def check_year_columns(df):
     """
     This function will compare the YearEnd and YearStart columns in the designated dataframe to check if they are the same value
@@ -249,4 +250,3 @@ def change_plot_color(graph, color='blue'):
     for handle in handles:
         if isinstance(handle, plt.Line2D):
             handle.set_color(color)
-    ax.legend(handles, labels)
