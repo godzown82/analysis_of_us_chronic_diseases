@@ -4,7 +4,7 @@
 
 
 # Overview: 
-This data set shows data collected by the CDC from 2001 to 2021 through various vetted sources to give numerous data values corresponding with a specific chronic disease indicator(labeled as Topic), which is broken down into subcategories(labeled Question). It has multiple additional columns that allow you to filter the data even further. We chose to filter the data by the United states as a whole, as well as the overall target group(labeled stratificationCategorey1), instead of separating by race or gender.  We then plotted these data values for each Question within their respective Topics. This gave us overall general trends for each indicator allowing us to start understanding what this data was capable of showing us. This type of analysis is critical to understanding public health practices and their overall success and/or shortcomings.
+This data set shows data collected by the CDC from 2001 to 2021 through various vetted sources to give numerous data values corresponding with a specific chronic disease indicator (labeled as Topic), which is broken down into subcategories (labeled Question). It has multiple additional columns that allow you to filter the data even further. We chose to filter the data by the United states as a whole, as well as the overall target group(labeled stratificationCategorey1), instead of separating by race or gender.  We then plotted these data values for each Question within their respective Topics. This gave us overall general trends for each indicator allowing us to start understanding what this data was capable of showing us. This type of analysis is critical to understanding public health practices and their overall success and/or shortcomings.
 
 
 ## Data Scientists and Topics
@@ -119,4 +119,122 @@ change_plot_color(tobacco_graphs[
 
 All of these functions and further explaination can be found in the cdindicatorFn.py file
 
-## Results / Conclusions:
+## Results: 
+
+### Mental Health Indicators
+
+Figure 1: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/At%20Least%2014%20Recent%20Mentally%20Unhealthy%20Days%20Among%20Women%20Aged%2018-44%20Years.png)
+    Age-adjusted Mean: adjusted for variations in age distribution across different demographic groups
+    Mentally Unhealthy Days: includes stress, depression, and problems with emotions
+    DataValue: shows on average how many mentally unhealthy days in the past 30 days an adult in the US had
+    YearEnd: represents the full year the data was collected from january 1rst to December 31 st 
+    Indicator is illustrated in red to indicate Negative results
+
+
+Figure 2: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ty_s_slide_Mental%20health.png)
+    Crude Prevalence: a raw estimate without adjusting for other factors like age distribution. These numbers are shown in percentages %
+    Recent: past 30 days
+    Mentally Unhealthy Days: includes stress, depression, and problems with emotions
+    YearEnd: represents the full year the data was collected from january 1rst to December 31rst 
+    Indicator is illustrated in red to indicate Negative results
+
+Figure 3: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Asthma%20Mortality%20Rate.png)
+
+    Crude Prevalence: a raw estimate without adjusting for other factors like age distribution. These numbers are shown in percentages %
+    Recent: past 30 days
+    Mentally Unhealthy Days: includes stress, depression, and problems with emotions
+    YearEnd: represents the full year the data was collected from january 1rst to December 31rst 
+    Indicator: Negative
+
+
+### Tobacco Indicators
+
+Figure 4: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ty_s_slide_pneu_vax.png)
+    Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
+    Noninstitutionalized: not in staying in hospitals, nursing homes, or other similar facilities
+    Pneumococcal Vaccinations: lowers risk of pneumonia
+
+
+Figure 5: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/Current%20Cigarette%20Smoking%20Among%20Women%20Aged%2018-44%20Years.png)
+
+    Datavalue: showing age_adjusted percentage(prevalence) of current smokers in the US 
+    Indicator is positive
+
+
+Figure 6:
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/Quit%20Attempts%20In%20The%20Past%20Year%20Among%20Current%20Smokers.png)
+
+    Data Value: showing age-adjusted percentage (prevalence)  for quit attempts amongst smokers
+    Indication: Undecided
+    Indication count:
+    Positive: 7
+    Negative:2(vaccinations)
+    Undecided: 1
+    Missing: 6
+
+### Asthma Health Indicators
+
+Figure 7: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Asthma%20Prevalence%20Among%20Women%20Aged%2018-44%20Years.png)
+
+    Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
+    Over the years we see an increase in Asthma prevalence among young women. Though what we find interesting is a dip in 2016 where in other indicators show an increased vaccination rate. Is it a possible cause for the drop?
+    Indication: negative
+
+
+Figure 8: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20Adults%20Aged%2018-64%20Years%20With%20Asthma.png)
+
+    Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
+    This indicator confirms influence vaccines were up in 2016 which could have led to the decrease in asthma cases and the decrease in 2018 could be the cause of an increase in Asthma cases.
+    Indication: positive
+
+
+### Chronic Obstructive Pulmonary Indicators
+
+Figure 9: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Activity%20Limitation%20Among%20Adults%20%3E%3D%2018%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
+
+    Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
+    Indication: negative
+
+Figure 10:
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Activity%20Limitation%20Among%20Adults%20%3E%3D%2045%20Years%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
+
+    Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
+    Indication: negative
+
+Figure 11: 
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Current%20Smoking%20Among%20Adults%20%3E%3D%2018%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
+
+Figure 12:
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Current%20Smoking%20Among%20Adults%20%3E%3D%2045%20Years%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
+
+### Alcohol Chronic Disease Indicator
+
+Figure 13:
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ID_s_alcohol_b4_preg.png)
+
+Figure 14:
+
+![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ID_s_bindge_drinking.png)
+
+## Conclusions:
