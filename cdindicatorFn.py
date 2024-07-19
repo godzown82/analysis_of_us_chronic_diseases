@@ -74,7 +74,7 @@ def datavalue_type_filter(dfs):
     returns datavalue_filter_dfs (a dictionary of filtered dataframes)
     """
     #creates list of manually entered in data type values discovered from there respective ipynb files when necessary
-    target_data_type = ['Average Annual Number','Age-adjusted Prevalence', 'Age-adjusted Mean', 'Age-adjusted Rate']
+    target_data_type = ['Average Annual Number','Age-adjusted Prevalence', 'Age-adjusted Mean', 'Age-adjusted Rate', 'Adjusted by age, sex, race and ethnicity']
 
     #creates empty dictionary to store filtered dataframes
     datavalue_filter_dfs = {}
