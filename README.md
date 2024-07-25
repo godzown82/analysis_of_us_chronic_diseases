@@ -232,17 +232,19 @@ Figure 7: Asthma prevalance among women aged 18-44
 
 <br>
 <br>
-Figure 8: Asthma patients between the ages of 18-64 who received Influenza Vacciniation and are noninstitutionalized. 
+
 
 ![Figure 8](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/asthma%20FLU%20vax%2018%20to%2064.png)
 
+Figure 8: Asthma patients between the ages of 18-64 who received Influenza Vacciniation and are noninstitutionalized. 
 <br>
 <br>
 
-Figure 9: Asthma patients ages 65 and up who received Influenza Vacciniation and are noninstitutionalized. 
+
 
 ![Figure 9](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/asthma%20FLU%20vax%2065%20and%20up.png)
 
+Figure 9: Asthma patients ages 65 and up who received Influenza Vacciniation and are noninstitutionalized. 
 <br>
 <br>
 
