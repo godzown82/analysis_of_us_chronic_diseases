@@ -317,14 +317,18 @@ Figure 17: Patients ages 65 and older with a history of Coronary Heart Disease o
 ### Diabetes
 
 ![Figure 18](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/Diabetes%20Flu%20vax%2018%20to%2064.png)
+
 Figure 18: Diabetic patients ages 18 to 64 who received Influenza Vacciniation and are noninstitutionalized.
 
->"Diabetes can increase the risk of pneumonia and make it harder to >fight off the infection. People with diabetes who develop >pneumonia may have more severe symptoms, increased complications, >and higher mortality rates." 
+>"Diabetes can increase the risk of pneumonia and make it harder to >fight off the infection. People with
+>diabetes who develop >pneumonia may have more severe symptoms, increased complications, >and higher
+>mortality rates." 
 
 <br>
 <br>
 
 ![Figure 19](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/Diabetes%20Flu%20vax%2065%20and%20up.png)
+
 Figure 19: Diabetic patients ages 65 and older who received Influenza Vacciniation and are noninstitutionalized.
 
 <br>
