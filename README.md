@@ -248,9 +248,11 @@ Figure 9: Asthma patients ages 65 and up who received Influenza Vacciniation and
 <br>
 <br>
 
-Figure 10: Asthma patients ages 18 to 64 who received Pneumococcal Vacciniation and are noninstitutionalized.
+
 
 ![Figure 10](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/asthma%20Pnem%20vax%2018%20to%2064%20.png)
+
+Figure 10: Asthma patients ages 18 to 64 who received Pneumococcal Vacciniation and are noninstitutionalized.
 
 <br>
 <br>
