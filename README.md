@@ -3,7 +3,18 @@
 
 
 
-# Overview: 
+# Purpose
+
+Data was extrapolated from the CDC https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi . Indicators are disease or at risk health topics gathered from various sources throughout the United States. Of the 124 potential indicators available, data scientists mined data from 11 indicators. Selection criteria for indicators was based on individual data scientists´ topics of interest. In research, and industries, value propositions must be made to demonstrate a use case and to obtain investments for a project or product. 
+
+Questions considered from the subset of the large data sets included: 
+
+1. Within each respective indicator, would any trends be found within the subcategory named, “Questions” which describes the data points taken?
+2. Across the simple random selection of indicators, are there any similar data questions collected that can be used to identify trends or potential correlations?
+3. Could this data pool be better used for, or interpreted by a machine learning application? 
+
+# Introduction 
+
 This data set shows data collected by the CDC from 2001 to 2021 through various vetted sources to give numerous data values corresponding with a specific chronic disease indicator (labeled as Topic), which is broken down into subcategories (labeled Question). It has multiple additional columns that allow you to filter the data even further. We chose to filter the data by the United states as a whole, as well as the overall target group(labeled stratificationCategorey1), instead of separating by race or gender.  We then plotted these data values for each Question within their respective Topics. This gave us overall general trends for each indicator allowing us to start understanding what this data was capable of showing us. This type of analysis is critical to understanding public health practices and their overall success and/or shortcomings.
 
 
@@ -42,7 +53,7 @@ The link to the full csv used in our analysis:
 https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi
 
 
-# Installation:
+# Installation
 
 To run the analysis you should have python installed on your computer using pip
 You will also need to download the CSV file from https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi if you want to run the data analysis on the full uncleaned data in group2_project.ipynb file.
@@ -63,7 +74,7 @@ Install notes: * Using python dev enviorment created from installing anaconda as
 * numpy
 * matplotlib.pyplot
 
-## Usage: 
+## Usage
 
 The analysis is performed using Jupyter notebooks; launch Jupyter Notebooks and add the appropiate files (eg. tobacco.ipynb, tobbacco.csv, & cdindicatorFn.py)
 Note depending on your setup you might have to change the path on read_csv code shown below
@@ -117,7 +128,8 @@ change_plot_color(tobacco_graphs[
     'Quit attempts in the past year among current smokers'], color = 'blue')
 ```
 
-All of these functions and further explaination can be found in the cdindicatorFn.py file
+### Dependency file cdindicatorFn.ipynb
+A dependency file entitled, "cdindicatorFn.py" was created to streamline the coding process. All  functions and further explaination can be found within the cdindicatorFn.py file
 
 ## Results: 
 
@@ -192,13 +204,13 @@ Figure 4: Self-reported Smokers over 18 years old.
 ![Figure 5](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/Quit%20Attempts%20In%20The%20Past%20Year%20Among%20Current%20Smokers.png)
 
 Figure 5: Current smokers who tried to quit smoking within the past year. 
-    Data Value: showing age-adjusted percentage (prevalence)  for quit attempts amongst smokers
-    Indication: Undecided
-    Indication count:
-    Positive: 7
-    Negative:2(vaccinations)
-    Undecided: 1
-    Missing: 6
+>Data Value: showing age-adjusted percentage (prevalence)  for >quit attempts amongst smokers
+>Indication: Undecided
+>Indication count:
+>Positive: 7
+>Negative:2(vaccinations)
+>Undecided: 1
+>Missing: 6
 
 ### Asthma Health Indicators
 
@@ -208,10 +220,10 @@ Figure 6: Mortality rate of asthma patients.
 <br>
 <br>
 
-Figure 7: Asthma prevalance among women aged 18-44
 
 ![Figure 7](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Asthma%20Prevalence%20Among%20Women%20Aged%2018-44%20Years.png)
 
+Figure 7: Asthma prevalance among women aged 18-44
 >Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
 >Over the years we see an increase in Asthma prevalence among young women. Though what we find
 >interesting is a dip in 2016 where in other indicators show an increased vaccination rate.
@@ -222,26 +234,26 @@ Figure 7: Asthma prevalance among women aged 18-44
 <br>
 Figure 8: Asthma patients between the ages of 18-64 who received Influenza Vacciniation and are noninstitutionalized. 
 
-![Figure 8](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
+![Figure 8](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/asthma%20FLU%20vax%2018%20to%2064.png)
 
 <br>
 <br>
 
 Figure 9: Asthma patients ages 65 and up who received Influenza Vacciniation and are noninstitutionalized. 
 
-![Figure 9](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
+![Figure 9](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/asthma%20FLU%20vax%2065%20and%20up.png)
 
 <br>
 <br>
 
 Figure 10: Asthma patients ages 18 to 64 who received Pneumococcal Vacciniation and are noninstitutionalized.
 
-![Figure 10](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
+![Figure 10](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/asthma%20Pnem%20vax%2018%20to%2064%20.png)
 
 <br>
 <br>
 
-![Figure 11](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
+![Figure 11](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/asthma%20Pnem%20vax%2065%20and%20up.png)
 
 Figure 11: Asthma patients ages 65 and up who received Pneumococcal Vacciniation and are noninstitutionalized.
 <br>
@@ -302,6 +314,9 @@ Figure 17: Patients ages 65 and older with a history of Coronary Heart Disease o
 
 ![Figure 18](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/Diabetes%20Flu%20vax%2018%20to%2064.png)
 Figure 18: Diabetic patients ages 18 to 64 who received Influenza Vacciniation and are noninstitutionalized.
+
+>"Diabetes can increase the risk of pneumonia and make it harder to >fight off the infection. People with diabetes who develop >pneumonia may have more severe symptoms, increased complications, >and higher mortality rates." 
+
 <br>
 <br>
 
@@ -344,4 +359,18 @@ Figure 23: Bindge drinking
 <br>
 <br>
 
-## Conclusions:
+## Conclusions
+
+This was a massive amount of data that required multiple iterations of data clean up. Time series data analysis served the most logical approach as a first pass to satisfy the questions 1 and 2 stated in the Purpose. The results support trends in patient subgroups (Indicators) who received or rejected influenza and pneumococcal vaccines in 2018 and 2020. 
+
+Influenza is within the class of respiratory diseases. At this point in the analysis, no true correlations could be made with respect to the increase/decrease of vaccinated patients within the data indicators´ respective years. However, the graph peaks and rises in years where events e.g., flu, Covid, quarantine were prevalent.
+
+A well designed machine learning application can compare the data trends from influenza vaccine and historical events such as Covid outbreaks and access to Covid vaccine for example. Furthermore, machine learning may be used to predict vulnerable patient population trends in proactive care. The ROI for building this model could be used in BigPharma and Health Care Providers to collaborate on the manufacturing of vaccines, patient education and access to vaccines. 
+<br>
+<br>
+## References
+
+1. https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi
+2. https://healthline.com/health/pneumonia/whats-the-connection-between-diabetes-and-pneumonia#outlook
+3.  https://www.nfid.org/facts-about-diabetes-and-flu/
+
