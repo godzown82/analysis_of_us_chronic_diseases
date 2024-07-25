@@ -123,58 +123,75 @@ All of these functions and further explaination can be found in the cdindicatorF
 
 ### Mental Health Indicators
 
-Figure 1: 
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/At%20Least%2014%20Recent%20Mentally%20Unhealthy%20Days%20Among%20Women%20Aged%2018-44%20Years.png)
+![Figure 1](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/At%20Least%2014%20Recent%20Mentally%20Unhealthy%20Days%20Among%20Women%20Aged%2018-44%20Years.png)
+
+Figure 1. Woman (ages 18-44 who) reported at least 14 days of recent unhealthy mental health days: 
+ 
     Age-adjusted Mean: adjusted for variations in age distribution across different demographic groups
+    
     Mentally Unhealthy Days: includes stress, depression, and problems with emotions
+
     DataValue: shows on average how many mentally unhealthy days in the past 30 days an adult in the US had
-    YearEnd: represents the full year the data was collected from january 1rst to December 31 st 
+
+    YearEnd: represents the full year the data was collected from January 1st to December 31 st 
+
     Indicator is illustrated in red to indicate Negative results
 
 
-Figure 2: 
+<br>
+<br>
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ty_s_slide_Mental%20health.png)
-    Crude Prevalence: a raw estimate without adjusting for other factors like age distribution. These numbers are shown in percentages %
+
+![Figure 2](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ty_s_slide_Mental%20health.png)
+ 
+
+Figure 2: Adults (ages 18, plus) who reported mentally unhealthy days in the past 30 days. 
+
+    Crude Prevalence: a raw estimate without adjusting for other factors like age distribution. 
+
+    These numbers are shown in percentages %
+
     Recent: past 30 days
+
     Mentally Unhealthy Days: includes stress, depression, and problems with emotions
-    YearEnd: represents the full year the data was collected from january 1rst to December 31rst 
-    Indicator is illustrated in red to indicate Negative results
 
-Figure 3: 
+    YearEnd: represents the full year the data was collected from January 1st to December 31st 
+    
+    Indicator: Negative which is illustrated in red to indicate Negative results
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Asthma%20Mortality%20Rate.png)
-
-    Crude Prevalence: a raw estimate without adjusting for other factors like age distribution. These numbers are shown in percentages %
-    Recent: past 30 days
-    Mentally Unhealthy Days: includes stress, depression, and problems with emotions
-    YearEnd: represents the full year the data was collected from january 1rst to December 31rst 
-    Indicator: Negative
-
+<br>
+<br>
+<br>
+<br>
 
 ### Tobacco Indicators
 
-Figure 4: 
+![Figure 3](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ty_s_slide_pneu_vax.png)
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ty_s_slide_pneu_vax.png)
+Figure 3: Smokers between the ages of 18-64 who received Pneumococcal Vacciniation and are noninstitutionalized. 
+
     Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
+
     Noninstitutionalized: not in staying in hospitals, nursing homes, or other similar facilities
     Pneumococcal Vaccinations: lowers risk of pneumonia
 
+<br>
+<br>
 
-Figure 5: 
+![Figure 4](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/Current%20Cigarette%20Smoking%20Among%20Women%20Aged%2018-44%20Years.png)
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/Current%20Cigarette%20Smoking%20Among%20Women%20Aged%2018-44%20Years.png)
+Figure 4: Self-reported Smokers over 18 years old. 
 
-    Datavalue: showing age_adjusted percentage(prevalence) of current smokers in the US 
+>Datavalue: showing age_adjusted percentage(prevalence) of current smokers in the US 
     Indicator is positive
 
+<br>
+<br>
 
-Figure 6:
+![Figure 5](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/Quit%20Attempts%20In%20The%20Past%20Year%20Among%20Current%20Smokers.png)
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/ty_branch/Quit%20Attempts%20In%20The%20Past%20Year%20Among%20Current%20Smokers.png)
-
+Figure 5: Current smokers who tried to quit smoking within the past year. 
     Data Value: showing age-adjusted percentage (prevalence)  for quit attempts amongst smokers
     Indication: Undecided
     Indication count:
@@ -185,47 +202,125 @@ Figure 6:
 
 ### Asthma Health Indicators
 
-Figure 7: 
+![Figure 6](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/Asthma%20Mortality%20Graph.png)
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Asthma%20Prevalence%20Among%20Women%20Aged%2018-44%20Years.png)
+Figure 6: Mortality rate of asthma patients. 
+<br>
+<br>
 
-    Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
-    Over the years we see an increase in Asthma prevalence among young women. Though what we find interesting is a dip in 2016 where in other indicators show an increased vaccination rate. Is it a possible cause for the drop?
-    Indication: negative
+Figure 7: Asthma prevalance among women aged 18-44
 
+![Figure 7](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Asthma%20Prevalence%20Among%20Women%20Aged%2018-44%20Years.png)
 
-Figure 8: 
+>Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
+>Over the years we see an increase in Asthma prevalence among young women. Though what we find
+>interesting is a dip in 2016 where in other indicators show an increased vaccination rate.
+>Is it possible cause for the drop?
+>Indication: negative
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20Adults%20Aged%2018-64%20Years%20With%20Asthma.png)
+<br>
+<br>
+Figure 8: Asthma patients between the ages of 18-64 who received Influenza Vacciniation and are noninstitutionalized. 
 
-    Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
-    This indicator confirms influence vaccines were up in 2016 which could have led to the decrease in asthma cases and the decrease in 2018 could be the cause of an increase in Asthma cases.
-    Indication: positive
+![Figure 8](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
 
+<br>
+<br>
+
+Figure 9: Asthma patients ages 65 and up who received Influenza Vacciniation and are noninstitutionalized. 
+
+![Figure 9](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
+
+<br>
+<br>
+
+Figure 10: Asthma patients ages 18 to 64 who received Pneumococcal Vacciniation and are noninstitutionalized.
+
+![Figure 10](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
+
+<br>
+<br>
+
+![Figure 11](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Influenza%20Vaccination%20Among%20Noninstitutionalized%20A)
+
+Figure 11: Asthma patients ages 65 and up who received Pneumococcal Vacciniation and are noninstitutionalized.
+<br>
+<br>
+<br>
 
 ### Chronic Obstructive Pulmonary Indicators
 
-Figure 9: 
+![Figure 12](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Activity%20Limitation%20Among%20Adults%20%3E%3D%2018%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Activity%20Limitation%20Among%20Adults%20%3E%3D%2018%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
-
+Figure 12: Chronic pulmanary disease diagnosed 
     Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
     Indication: negative
 
-Figure 10:
+<br>
+<br>
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Activity%20Limitation%20Among%20Adults%20%3E%3D%2045%20Years%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
+![Figure 13](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Activity%20Limitation%20Among%20Adults%20%3E%3D%2045%20Years%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
 
+Figure 13: Activity limitations prevalent among Chronic Pulmanary Disease patients 45 and older. 
     Age-adjusted Prevalence: adjusted for variations in age distribution across different demographic groups, shown as a percentage of the target group
     Indication: negative
 
-Figure 11: 
+<br>
+<br>
+<br>
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Current%20Smoking%20Among%20Adults%20%3E%3D%2018%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
+### Cardiovascular Disease
 
-Figure 12:
+![Figure 14](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/brian_branch/Influenza%20Vaccination%2018-64%20Coronary%20Heart.png)
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/dapo_branch/Prevalence%20Of%20Current%20Smoking%20Among%20Adults%20%3E%3D%2045%20Years%20With%20Diagnosed%20Chronic%20Obstructive%20Pulmonary%20Disease.png)
+Figure 14: Patients ages 18 to 64 with a history of Coronary Heart Disease or Stroke who received Influenza Vacciniation and are noninstitutionalized.
+<br>
+<br>
+
+![Figure 15](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/brian_branch/Influenza%20Vaccination%20over%2065%20Coronary%20Heart.png)
+
+Figure 15: Patients ages 65 and older with a history of Coronary Heart Disease or Stroke who received Influenza Vacciniation and are noninstitutionalized.
+
+<br>
+<br>
+
+![Figure 16](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/brian_branch/Pneumococcal%20Vaccination%2018-64%20Coronary%20Heart.png)
+
+Figure 16: Patients ages 18 to 64 with a history of Coronary Heart Disease or Stroke who received Pneumococcal Vacciniation and are noninstitutionalized.
+<br>
+<br>
+
+![Figure 17](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/brian_branch/Pneumococcal%20Vaccination%20over%2065%20Coronary%20Heart.png)
+
+Figure 17: Patients ages 65 and older with a history of Coronary Heart Disease or Stroke who received Pneumococcal Vacciniation and are noninstitutionalized.
+
+<br>
+<br>
+
+
+### Diabetes
+
+![Figure 18](https)
+Figure 18: Diabetic patients ages 18 to 64 who received Influenza Vacciniation and are noninstitutionalized.
+<br>
+<br>
+
+![Figure 19](https)
+Figure 19: Diabetic patients ages 65 and older who received Influenza Vacciniation and are noninstitutionalized.
+
+<br>
+<br>
+
+![Figure 20](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/brian_branch/Pneumococcal%20Vaccination%2018-64%20Coronary%20Heart.png)
+
+Figure 20: Diabetic patients ages 18 to 64 who received Pneumococcal Vacciniation and are noninstitutionalized.
+<br>
+<br>
+
+![Figure 21](ht)
+
+Figure 21: Diabetic patients ages 65 and older who received Pneumococcal Vacciniation and are noninstitutionalized.
+
 
 ### Alcohol Chronic Disease Indicator
 
