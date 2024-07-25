@@ -300,36 +300,48 @@ Figure 17: Patients ages 65 and older with a history of Coronary Heart Disease o
 
 ### Diabetes
 
-![Figure 18](https)
+![Figure 18](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/Diabetes%20Flu%20vax%2018%20to%2064.png)
 Figure 18: Diabetic patients ages 18 to 64 who received Influenza Vacciniation and are noninstitutionalized.
 <br>
 <br>
 
-![Figure 19](https)
+![Figure 19](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/Diabetes%20Flu%20vax%2065%20and%20up.png)
 Figure 19: Diabetic patients ages 65 and older who received Influenza Vacciniation and are noninstitutionalized.
 
 <br>
 <br>
 
-![Figure 20](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/brian_branch/Pneumococcal%20Vaccination%2018-64%20Coronary%20Heart.png)
+![Figure 20](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/Diabetes%20Pne%20vax%2018%20to%2064.png)
 
 Figure 20: Diabetic patients ages 18 to 64 who received Pneumococcal Vacciniation and are noninstitutionalized.
 <br>
 <br>
 
-![Figure 21](ht)
+![Figure 21](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/main/Diabetes%20Pne%20vax%2065%20and%20up.png)
 
 Figure 21: Diabetic patients ages 65 and older who received Pneumococcal Vacciniation and are noninstitutionalized.
 
+<br>
+<br>
+<br>
 
 ### Alcohol Chronic Disease Indicator
 
-Figure 13:
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ID_s_alcohol_b4_preg.png)
 
-Figure 14:
+![Figure 22](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ID_s_alcohol_b4_preg.png)
 
-![](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ID_s_bindge_drinking.png)
+Figure 22: Alcohol consumption prior to pregnancy
+
+<br>
+<br>
+
+![Figure 23](https://github.com/godzown82/analysis_of_us_chronic_diseases/blob/patricia_branch/ID_s_bindge_drinking.png)
+
+Figure 23: Bindge drinking 
+
+<br>
+<br>
+<br>
 
 ## Conclusions:
