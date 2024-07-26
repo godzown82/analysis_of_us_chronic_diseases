@@ -321,7 +321,7 @@ Figure 17: Patients ages 65 and older with a history of Coronary Heart Disease o
 Figure 18: Diabetic patients ages 18 to 64 who received Influenza Vacciniation and are noninstitutionalized.
 
 >"Diabetes can increase the risk of pneumonia and make it harder to >fight off the infection. People with
->diabetes who develop >pneumonia may have more severe symptoms, increased complications, >and higher
+>diabetes who develop pneumonia may have more severe symptoms, increased complications, and higher
 >mortality rates." 
 
 <br>
